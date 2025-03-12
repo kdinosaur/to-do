@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.container {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+}
+
+form input {
+  flex-grow: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item,
+.completed-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.todo-item.high,
+.completed-item.high {
+  background-color: #ffcccc;
+}
+
+.todo-item.medium,
+.completed-item.medium {
+  background-color: #fff3cd;
+}
+
+.todo-item.low,
+.completed-item.low {
+  background-color: #d4edda;
+}
+
+.todo-item button,
+.completed-item button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo-item button:hover,
+.completed-item button:hover {
+  cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #6c757d; /* Gray for edit button */
+    margin-right: 5px; /* Space between Edit and Delete buttons */
+}
